@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Животные</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+        <h1>
+            <img src="shiba-inu-icon-27.png" width="5%">
+            Лапки в хороших руках
+            <img src="shiba-inu-icon-27.png" width="5%">
+        </h1>
+    </div>
+    <div class="auth">
+      <button id="authBtn">Войти</button>
+      <div class="auth-form hidden">
+        <input type="text" id="username" placeholder="Имя пользователя">
+        <input type="password" id="password" placeholder="Пароль">
+        <button id="submitBtn">Войти</button>
+      </div>
+      <p class="status hidden"></p>
+    </div>
+    <button id="logoutBtn">Выйти</button>
+    <!-- Навигационная панель -->
+    <div class="nav">
+      <a href="home.html">Главная</a>
+      <a class="active" href="#">Животные</a>
+      <a href="shelter.html">О приюте</a>
+    </div>
+    <div class="sidebar">
+        <h2>Животные</h2>
+        <ul class="animal-list">
+            <a href="#" class="active">Все</a>
+          <a href="#">Собаки</a>
+          <a href="#">Кошки</a>
+          <a href="#">Попугаи</a>
+        </ul>
+    </div>
+    <div class="cards">
+        <div class="animal-card собаки">
+            <img src="dog1.jpeg" alt="Животное">
+            <h3>Шарик</h3>
+            <p>Шарик - красивый и добрый пёс, который очень любит гулять и играть с мячом.</p>
+            <button class="take-button">Взять</button>
+            <div class="form-container">
+                <form>
+                  <label for="name">Введите ваше имя:</label>
+                  <input type="text" id="name" name="name">
+                  <label for="email">Введите ваш email:</label>
+                  <input type="email" id="email" name="email">
+                  <button type="submit">Подтвердить</button>
+                </form>
+            </div>
+        </div>
+        <div class="animal-card собаки">
+            <img src="dog2.jpeg" alt="Животное">
+            <h3>Рекс</h3>
+            <p>Рекс - очень ласковый и дружелюбный пёс, готовый стать вашим лучшим другом.</p>
+            <button class="take-button">Взять</button>
+            <div class="form-container">
+                <form>
+                  <label for="name">Введите ваше имя:</label>
+                  <input type="text" id="name" name="name">
+                  <label for="email">Введите ваш email:</label>
+                  <input type="email" id="email" name="email">
+                  <button type="submit">Подтвердить</button>
+                </form>
+            </div>
+        </div>
+        <div class="animal-card кошки">
+            <img src="cat1.jpeg" alt="Животное">
+            <h3>Мурзик</h3>
+            <p>Мурзик - мягкий и пушистый кот, который любит почивать на руке хозяина.</p>
+            <button class="take-button">Взять</button>
+            <div class="form-container">
+                <form>
+                  <label for="name">Введите ваше имя:</label>
+                  <input type="text" id="name" name="name">
+                  <label for="email">Введите ваш email:</label>
+                  <input type="email" id="email" name="email">
+                  <button type="submit">Подтвердить</button>
+                </form>
+            </div>
+        </div>
+        <div class="animal-card кошки">
+            <img src="cat2.jpeg" alt="Животное">
+            <h3>Барсик</h3>
+            <p>Барсик - грациозный и элегантный кот, который обожает играть со своими игрушками.</p>
+            <button class="take-button">Взять</button>
+            <div class="form-container">
+                <form>
+                  <label for="name">Введите ваше имя:</label>
+                  <input type="text" id="name" name="name">
+                  <label for="email">Введите ваш email:</label>
+                  <input type="email" id="email" name="email">
+                  <button type="submit">Подтвердить</button>
+                </form>
+            </div>
+        </div>
+        <div class="animal-card попугаи">
+            <img src="popug1.jpg" alt="Животное">
+            <h3>Кеша</h3>
+            <p>Кеша - яркий и веселый попугай, готовый поддерживать беседу в любое время дня.</p>
+            <button class="take-button">Взять</button>
+            <div class="form-container">
+                <form>
+                  <label for="name">Введите ваше имя:</label>
+                  <input type="text" id="name" name="name">
+                  <label for="email">Введите ваш email:</label>
+                  <input type="email" id="email" name="email">
+                  <button type="submit">Подтвердить</button>
+                </form>
+            </div>
+          </div>
+          
+          <div class="animal-card попугаи">
+            <img src="popug2.jpeg" alt="Животное">
+            <h3>Лорик</h3>
+            <p>Лорик - игривый и разговорчивый попугай, который обожает подражать своему хозяину.</p>
+            <button class="take-button">Взять</button>
+            <div class="form-container">
+                <form>
+                  <label for="name">Введите ваше имя:</label>
+                  <input type="text" id="name" name="name">
+                  <label for="email">Введите ваш email:</label>
+                  <input type="email" id="email" name="email">
+                  <button type="submit">Подтвердить</button>
+                </form>
+            </div>
+          </div>
+    </div>
+    <div class="modal-overlay">
+        <div class="modal">
+          <p>Номер запроса: <span id="request-number"></span></p>
+          <p>Зафиксируйте ваш номер запроса, для обращения в наш приют</p>
+          <button id="ok-button">Ок</button>
+        </div>
+      </div>
+    <script src="scripts.js"></script>
+</html>
